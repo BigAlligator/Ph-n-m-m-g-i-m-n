@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ta.quancafe.MainActivity.Activity.SanPhamActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSanpham"
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#974307"
+        app:title="Cafe - Bánh ngọt - Giải khát"
+        app:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textmenu"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#974307"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/ListviewSp"
+        android:layout_width="match_parent"
+        android:layout_height="457dp"
+        android:background="#edac70"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edac70"
+        android:orientation="horizontal"
+
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/buttontieptuc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="0.46"
+            android:background="#974307"
+            android:text="Tiếp tục "
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/buttonthantoan"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#974307"
+            android:text="Đặt hàng"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/buttonhuy"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="#974307"
+            android:text="Hủy"
+
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

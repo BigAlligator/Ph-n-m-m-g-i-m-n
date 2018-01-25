@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:title="  Chi tiết hóa đơn"
+        app:titleTextColor="#ffffff"
+        android:id="@+id/toolbarHoadonCT"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#974307"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/textViewMahdCT"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="0.05"
+            android:gravity="fill"
+            android:text="Mã Hóa đơn:" />
+
+        <TextView
+
+            android:id="@+id/textViewBanCT"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="0.13"
+            android:gravity="left|center"
+            android:text="Bàn số:" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewDateCT"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:gravity="top|left|center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Date:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/textViewNoidungCT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right|center"
+        android:text="Tổng tiền:" />
+</LinearLayout>
